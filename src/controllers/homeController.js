@@ -1,3 +1,3 @@
 exports.inicio = (req, res) => {
-    res.send('')
+    res.render('index')
 }

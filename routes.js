@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const homeController = require('./controllers/homeController')
-const calculoController = require('./controllers/calculoController')
+const homeController = require('./src/controllers/homeController')
+const calculoController = require('./src/controllers/calculoController')
 
 /* Rotas de inicio */
 router.get('/', homeController.inicio)
