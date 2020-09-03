@@ -6,6 +6,10 @@ const path = require('path');
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
+//setando o express para conteudo estático (css, bundle etc..)
+app.use(express.static(path.resolve(__dirname, 'public')))
+
+
 //setando a pasta e a engine que vai renderizar as views
 app.set('views', path.resolve(__dirname, 'src', 'views'))
 app.set('view engine', 'ejs')

@@ -3,17 +3,28 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "dev": "node server.js"
+    "start": "nodemon server.js",
+    "dev": "webpack -w"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "core-js": "^3.6.5",
+    "css-loader": "^4.2.2",
     "ejs": "^3.1.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "regenerator-runtime": "^0.13.7",
+    "style-loader": "^1.2.1"
   },
   "description": "",
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "@babel/cli": "^7.11.5",
+    "@babel/core": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "nodemon": "^2.0.4",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
   }
 }
